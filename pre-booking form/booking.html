@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital Appointment Booking</title>
+</head>
+<body bgcolor="black" style="color: bisque;">
+<center>
+  <h1>Patient Appointment Booking Form</h1>
+
+  <form action="confirmation.html" method="get>
+
+    <label for="pname">Patient Full Name:</label><br>
+    <input type="text" id="pname" name="pname" required><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="0" required><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" required>
+      <option value="">--Select Gender--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="phone">Contact Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="email">Email (optional):</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="department">Select Department:</label><br>
+    <select id="department" name="department" required>
+      <option value="">--Select Department--</option>
+      <option value="general">General Medicine</option>
+      <option value="cardiology">Cardiology</option>
+      <option value="orthopedics">Orthopedics</option>
+      <option value="pediatrics">Pediatrics</option>
+      <option value="dermatology">Dermatology</option>
+    </select><br><br>
+
+    <label for="doctor">Preferred Doctor (if any):</label><br>
+    <input type="text" id="doctor" name="doctor"><br><br>
+
+    <label for="date">Preferred Appointment Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="time">Preferred Time Slot:</label><br>
+    <select id="time" name="time" required>
+      <option value="">--Select Time--</option>
+      <option value="morning">Morning (9 AM - 12 PM)</option>
+      <option value="afternoon">Afternoon (1 PM - 4 PM)</option>
+      <option value="evening">Evening (5 PM - 7 PM)</option>
+    </select><br><br>
+
+    <label for="symptoms">Symptoms / Reason for Visit:</label><br>
+    <textarea id="symptoms" name="symptoms" rows="4" cols="30" required></textarea><br><br>
+
+    <input type="submit" value="Book Appointment">
+
+
+  </form>
+</center>
+</body>
+</html>
